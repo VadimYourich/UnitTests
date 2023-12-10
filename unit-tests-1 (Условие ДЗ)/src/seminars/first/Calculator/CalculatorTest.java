@@ -1,5 +1,7 @@
 package seminars.first.Calculator;
 
+import org.assertj.core.util.VisibleForTesting;
+import org.junit.jupiter.api.Test;
 import seminars.first.Calculator.Calculator;
 
 import static org.assertj.core.api.Assertions.*;
@@ -74,6 +76,11 @@ public class CalculatorTest {
         // }
         //   assert 0 == seminars.first.Calculator.Calculator.calculation(2, 6, '+');
         //    assertThat(seminars.first.Calculator.Calculator.calculation(2, 6, '+')).isEqualTo(0);
+
+    }
+        @Test
+        public void testCalculateDiscount() {
+            Calculator calculator = new Calculator();
 
         //    ДЗ_1
         //    1. Проверка корректного расчёта скидки:
